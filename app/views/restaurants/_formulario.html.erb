@@ -1,0 +1,17 @@
+
+<%= form_for @restaurant do |x| %>
+
+    <%= x.label :name, "ingrese nombre" %>
+    <%= x.text_field :name %>
+
+    <%= x.label :rating, "ingrese rating" %>
+    <%= x.text_field :rating %>
+
+    <%= x.label :address, "ingrese direccion" %>
+    <%= x.text_field :address %>
+
+    <%= x.submit %>
+
+<% end %>
+
+<%= link_to "ir al inicio", restaurants_path %>

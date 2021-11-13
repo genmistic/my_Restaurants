@@ -1,0 +1,9 @@
+<h1>Restaurants#index</h1>
+
+<% @restaurants.each do |restaurant| %>
+<%= link_to restaurant.name, restaurant_path(restaurant)%><small><%= restaurant.rating%></small>
+<%= y=restaurant.rating%>
+ y= y * "👩"
+
+<% end %>
+<%= link_to "volver", new_restaurant_path %>
